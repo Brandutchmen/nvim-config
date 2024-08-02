@@ -18,7 +18,7 @@ local options = {
   -- This setting is useful if some functionality is handled by other plugins such as `conform` and `nvim-lint`
   methods = {
     diagnostics = true,
-    formatting = true,
+    formatting = false, -- handled by Conform
     code_actions = true,
     completion = true,
     hover = true,
@@ -27,7 +27,7 @@ local options = {
   -- Will automatically install masons tools based on selected sources in `null-ls`.
   -- Can also be an exclusion list.
   -- Example: `automatic_installation = { exclude = { "rust_analyzer", "solargraph" } }`
-  automatic_installation = false,
+  automatic_installation = true,
   -- See [#handlers-usage](#handlers-usage) section
   handlers = nil,
 }

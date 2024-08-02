@@ -29,6 +29,7 @@ return {
         "python",
         "go",
         "rust",
+        "vue",
       },
     },
   },
@@ -144,5 +145,36 @@ return {
     config = function()
       require "configs.none-ls"
     end,
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    dependencies = {
+      {
+        "zbirenbaum/copilot-cmp",
+        config = function()
+          require("copilot_cmp").setup()
+        end,
+      },
+      {
+        "roobert/tailwindcss-colorizer-cmp.nvim",
+        -- optionally, override the default options:
+        config = function()
+          require("tailwindcss-colorizer-cmp").setup {
+            color_square_width = 2,
+          }
+        end,
+      },
+    },
+    opts = {
+      sources = {
+        { name = "nvim_lsp", group_index = 1 },
+        { name = "luasnip", group_index = 2 },
+        { name = "buffer", group_index = 2 },
+        { name = "path", group_index = 2 },
+        { name = "copilot", group_index = 2 },
+        { name = "tailwind", group_index = 2 },
+        { name = "nvim_lua", group_index = 3 },
+      },
+    },
   },
 }
