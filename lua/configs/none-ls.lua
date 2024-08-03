@@ -13,6 +13,10 @@ local options = {
     "yamlls",
     "dockerls",
     "tailwindcss",
+    "gopls",
+    "gofmt",
+    "goimports",
+    "gci",
   },
   -- Enable or disable null-ls methods to get set up
   -- This setting is useful if some functionality is handled by other plugins such as `conform` and `nvim-lint`
