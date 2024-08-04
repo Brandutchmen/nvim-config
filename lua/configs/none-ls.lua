@@ -4,7 +4,8 @@ local options = {
   ensure_installed = {
     "html",
     "cssls",
-    "tsserver",
+    "typescript-language-server",
+    "tailwindcss-language-server",
     "clangd",
     "phpactor",
     "astro",
