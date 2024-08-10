@@ -5,7 +5,6 @@ local lspconfig = require "lspconfig"
 
 local servers = {
   "html",
-  "cssls",
   -- "tsserver",
   "clangd",
   "phpactor",

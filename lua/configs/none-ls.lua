@@ -3,7 +3,6 @@ local options = {
   -- This setting has no relation with the `automatic_installation` setting.
   ensure_installed = {
     "html",
-    "cssls",
     "typescript-language-server",
     "tailwindcss-language-server",
     "clangd",
