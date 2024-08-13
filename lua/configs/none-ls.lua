@@ -12,6 +12,7 @@ local options = {
     "pyright",
     "yamlls",
     "dockerls",
+    "docker-langserver",
     "tailwindcss",
     "gopls",
     "gofmt",

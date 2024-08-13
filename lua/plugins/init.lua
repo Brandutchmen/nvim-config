@@ -30,6 +30,7 @@ return {
         "go",
         "rust",
         "vue",
+        "dockerfile",
       },
     },
   },
