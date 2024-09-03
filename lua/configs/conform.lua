@@ -4,6 +4,7 @@ local options = {
     css = { "prettier" },
     html = { "prettier" },
     go = { "gofmt", "goimports", "gci" },
+    php = { "phpcbf" },
   },
 
   format_on_save = {

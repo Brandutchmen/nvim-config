@@ -1,4 +1,6 @@
 local options = {
+  suggestion = { enabled = false },
+  panel = { enabled = false },
   -- Possible configurable fields can be found on:
   -- https://github.com/zbirenbaum/copilot.lua#setup-and-configuration
   -- suggestion = {

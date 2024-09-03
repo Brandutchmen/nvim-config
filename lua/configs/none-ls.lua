@@ -18,6 +18,11 @@ local options = {
     "gofmt",
     "goimports",
     "gci",
+    "phpstan",
+    "php-cs-fixer",
+    "php-cs",
+    "phpstan",
+    "phpcbf",
   },
   -- Enable or disable null-ls methods to get set up
   -- This setting is useful if some functionality is handled by other plugins such as `conform` and `nvim-lint`
