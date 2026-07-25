@@ -2,6 +2,18 @@ vim.g.lspconfig_suppress_deprecation_warning = true
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 vim.g.mapleader = " "
 
+-- silence the (harmless) "watch.watch: ENOENT" notice LSP clients log on
+-- macOS when a registered file-watch base dir (e.g. node_modules) doesn't exist
+do
+  local notify_once = vim.notify_once
+  vim.notify_once = function(msg, ...)
+    if type(msg) == "string" and msg:match "^watch%.watch: " then
+      return
+    end
+    return notify_once(msg, ...)
+  end
+end
+
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
